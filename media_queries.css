@@ -1,0 +1,23 @@
+@media (width < 900px) {
+
+    header {
+        position: relative;
+    }
+
+    .navigation-container {}
+
+    .main-nav {
+        /* display: none; */
+        width: 50%;
+        background-color: #fff;
+        position: absolute;
+        right: -50%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .main-nav li{
+        padding: 1.3rem 0;
+    }
+}
