@@ -8,16 +8,55 @@
 
     .main-nav {
         /* display: none; */
-        width: 50%;
+        width: 55%;
+        height: 100vh;
         background-color: #fff;
         position: absolute;
-        right: -50%;
+        top: 0;
+        left: -50%;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease-in;
     }
 
+    .menu-btn .fa-bars {
+        display: block;
+        z-index: 999;
+    }
 
-    .main-nav li{
+    .active .fa-bars {
+        display: none !important;
+    }
+
+    .active .fa-xmark {
+        display: block !important;
+        z-index: 999;
+    }
+
+    .active {
+        visibility: visible;
+        opacity: 1;
+        left:0;
+    }
+
+    /* .active .navigation-container{
+        position:sticky;
+    } */
+
+    /* .active .main-nav {
+        visibility: hidden;
+        opacity: 0;
+    } */
+
+
+    .main-nav li {
         padding: 1.3rem 0;
+    }
+
+    .cta-btn {
+        display: none;
     }
 }

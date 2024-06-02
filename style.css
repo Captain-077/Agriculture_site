@@ -112,8 +112,26 @@ header {
 }
 
 
+.menu-btn{
+    display: flex;
+    align-items: center;
+}
 
 
+.menu-btn .fa-bars{
+    display: none;
+}
+
+
+.menu-btn .fa-xmark{
+    display: none;
+}
+
+
+.menu-btn i{
+    font-size: 1.5rem;
+    color:var(--text-color);
+}
 
 
 
